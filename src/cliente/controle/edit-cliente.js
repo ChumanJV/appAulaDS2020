@@ -14,7 +14,7 @@ $(document).ready(function() {
             type: 'POST',
             dataType: 'JSON',
             assync: true,
-            data: idcategoria,
+            data: idcliente,
             url: 'src/cliente/modelo/view-cliente.php',
             success: function(dado) {
                 if (dado.tipo == "success") {

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#table-cliente').on('click', 'btn btn-info btn-sm btn-view', function(e) {
+    $('#table-cliente').on('click', 'button.btn-view', function(e) {
         e.preventDefault()
 
         $('.modal-title').empty()
@@ -36,7 +36,7 @@ $(document).ready(function() {
                     })
                     $('.btn-save').hide()
                     $('.btn-update').hide()
-                    $('#modal-categoria').modal('show')
+                    $('#modal-cliente').modal('show')
                 } else {
                     Swal.fire({
                         title: 'appAulaDS',

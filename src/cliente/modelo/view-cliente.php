@@ -21,13 +21,13 @@
             $dados = array("tipo" =>"success","mensagem" => "","dados" => $dadosCliente);
 
         } else{
-            $dados = array("tipo" => "error","mensagem" => "Não possível localizar a categoria.","dados" => array());
+            $dados = array("tipo" => "error","mensagem" => "Não possível localizar a cliente.","dados" => array());
         }
 
         mysqli_close($conexao);
 
     } else{
-        $dados = array("tipo" => "info","mensagem" => "Não possível conecar ao banco de dados","dados" => array());
+        $dados = array("tipo" => "info","mensagem" => "Não possível conectar ao banco de dados","dados" => array());
     }
 
 echo json_encode($dados, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
